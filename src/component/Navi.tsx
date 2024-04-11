@@ -21,7 +21,7 @@ const Navi = ({href,title}:Naviprps) => {
         fontWeight="black" 
         fontSize="40px" 
         color="#141414" 
-        _hover={{ color: "#FBFBFC" }} 
+        _hover={{ color: "#D9D9D9" }} 
         
         marginRight="25px"
         marginLeft="25px"
