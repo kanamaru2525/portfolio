@@ -18,10 +18,10 @@ const Navi = ({href,title}:Naviprps) => {
       
       <Link 
         fontFamily="notojp" 
-        fontWeight="medium" 
+        fontWeight="black" 
         fontSize="40px" 
         color="#141414" 
-        _hover={{ color: "#97E7E1" }} 
+        _hover={{ color: "#FBFBFC" }} 
         
         marginRight="25px"
         marginLeft="25px"

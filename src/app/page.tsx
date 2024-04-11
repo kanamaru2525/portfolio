@@ -10,7 +10,7 @@ export default function Home() {
           <Navi href="/portforio"title="日本語2"></Navi>
           <Navi href="/portforio"title="日本語3"></Navi>
         </Flex>
-      <Box h="100vh" bg="#F8F6E3">      
+      <Box h="100vh" bg="#B9C0CC">      
       </Box>
       <Box h="100vh">
       
