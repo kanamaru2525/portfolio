@@ -8,7 +8,8 @@ interface Naviprps {
 
 const Navi = ({href,title}:Naviprps) => {
     return (
-      <Link color="black" href={href}>{title}</Link>
+      <Link fontWeight="medium" color="#7AA2E3" fontSize="40px" href={href} _hover={{ color: "#97E7E1" }}>{title}</Link>
+      
     )
   }
   
