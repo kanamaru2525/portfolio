@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Header from "@/component/header";
-import { Box, Flex,Text,Image, m, Grid, GridItem, List, ListItem } from "@yamada-ui/react";
+import { Box, Flex,Text,Image, List, ListItem, Motion } from "@yamada-ui/react";
 import { Noto_Sans_JP } from 'next/font/google'
 
 const notojp = Noto_Sans_JP({
@@ -15,30 +15,34 @@ export default function Home() {
     <Box _scrollbar={{display:"none"}} fontFamily="notojp">
       <Header></Header>
       <Flex h="100vh" bg="#B9C0CC" justifyContent="center" alignItems="center" flexDirection="column" display="flex">   
-          <Text fontSize="96px"fontWeight="black"color="white" borderBottom="solid"whileHover={{ scale: 1.1 }}>KANAMARU TAISEI</Text>
+          <Motion fontSize="96px"fontWeight="black"color="white" borderBottom="solid">
+            KANAMARU TAISEI
+          </Motion>
           <Text fontSize="32px" color="white" margin="25px">A failure to become a creator</Text>
       </Flex>
       <Box h="10vh"justifyContent="center" alignItems="center"display="flex">
-        <Text marginRight="25px"marginLeft="25px"paddingTop="5"fontSize="32px" >Profile</Text>
-      </Box>
-      <Box h="90vh"justifyContent="center" alignItems="center" display="flex">
-        <Flex flexWrap="wrap" >
-          <Image src="/images/me.jpg" alt="me" zoom="0.25"marginRight="25px"marginLeft="25px" padding="5" />
-          <List fontSize="40px"marginRight="25px"marginLeft="25px"paddingTop="5">
-            <ListItem>Name:金丸汰生</ListItem>
-            <ListItem>Age:20</ListItem>
-            <ListItem>Hobby:TRPG・自炊</ListItem>
-            <ListItem>Certification:色彩検定2級</ListItem>
-            <ListItem>Skill:Next.js HTML CSS Figma</ListItem>
-          </List>
-        </Flex>
-      </Box>
-      <Box h="100vh" bg="#FF9567">
-      </Box>
-
-      <Box h="5vh" bg="black">
         
-      </Box>     
+        <Text marginRight="25px"marginLeft="25px"paddingTop="5"fontSize="32px"fontWeight="black">Profile</Text>
+
+      </Box>
+        <Box h="90vh"justifyContent="center" alignItems="center" display="flex">
+          <Flex flexWrap="wrap" >
+            <Image src="/images/me.jpg" alt="me" zoom="0.25"marginRight="25px"marginLeft="25px" padding="5" />
+            <List fontSize="40px"marginRight="25px"marginLeft="25px"paddingTop="5">
+              <ListItem>Name:金丸汰生</ListItem>
+              <ListItem>Age:20</ListItem>
+              <ListItem>Hobby:TRPG・自炊</ListItem>
+              <ListItem>Certification:色彩検定2級</ListItem>
+              <ListItem>Skill:Next.js HTML CSS Figma</ListItem>
+            </List>
+          </Flex>
+        </Box>
+        <Box h="100vh" bg="#FF9567">
+        
+        </Box>
+        <Box h="5vh" bg="black">
+        
+        </Box>     
     </Box>
   )
   };
