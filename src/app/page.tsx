@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Header from "@/component/header";
-import { Box, Flex,Text,Image, List, ListItem, Motion } from "@yamada-ui/react";
+import { Box, Flex,Text,Image, List, ListItem, Motion, Center } from "@yamada-ui/react";
 import { Noto_Sans_JP } from 'next/font/google'
 
 const notojp = Noto_Sans_JP({
@@ -20,29 +20,29 @@ export default function Home() {
           </Motion>
           <Text fontSize="32px" color="white" margin="25px">A failure to become a creator</Text>
       </Flex>
-      <Box h="10vh"justifyContent="center" alignItems="center"display="flex">
-        
-        <Text marginRight="25px"marginLeft="25px"paddingTop="5"fontSize="32px"fontWeight="black">Profile</Text>
 
+      <Box h="10vh"justifyContent="center" alignItems="center"display="flex">
+        <Text marginRight="25px"marginLeft="25px"paddingTop="5"fontSize="32px"fontWeight="black">Profile</Text>
       </Box>
         <Box h="90vh"justifyContent="center" alignItems="center" display="flex">
-          <Flex flexWrap="wrap" >
+          <Flex flexWrap="wrap">
             <Image src="/images/me.jpg" alt="me" zoom="0.25"marginRight="25px"marginLeft="25px" padding="5" />
-            <List fontSize="40px"marginRight="25px"marginLeft="25px"paddingTop="5">
+            <List fontSize="40px"marginRight="25px"marginLeft="25px"paddingTop="5" >
               <ListItem>Name:金丸汰生</ListItem>
               <ListItem>Age:20</ListItem>
               <ListItem>Hobby:TRPG・自炊</ListItem>
-              <ListItem>Certification:色彩検定2級</ListItem>
-              <ListItem>Skill:Next.js HTML CSS Figma</ListItem>
+              <ListItem>From:Awaji</ListItem>
             </List>
           </Flex>
         </Box>
-        <Box h="100vh" bg="#FF9567">
-        
+        <Box h="100vh" bg="#2F4A78">
+        <Box h="10vh"justifyContent="center" alignItems="center"display="flex">
+        <Text marginRight="25px"marginLeft="25px"paddingTop="5"fontSize="32px"fontWeight="black"color={"white"}>Skill</Text>
+      </Box>
         </Box>
-        <Box h="5vh" bg="black">
-        
-        </Box>     
+        <Center h="5vh" bg="black">
+         <Center color="white"justifyContent="center">🄫KanamaruTaisei-2024</Center>
+        </Center>     
     </Box>
   )
   };
