@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+import Footer from "@/component/footer";
 import Header from "@/component/header";
 import { Box, Flex,Text,Image, List, ListItem, Motion, Center } from "@yamada-ui/react";
 import { Noto_Sans_JP } from 'next/font/google'
@@ -40,9 +41,7 @@ export default function Home() {
         <Text marginRight="25px"marginLeft="25px"paddingTop="5"fontSize="32px"fontWeight="black"color={"white"}>Skill</Text>
       </Box>
         </Box>
-        <Center h="5vh" bg="black">
-         <Center color="white"justifyContent="center">🄫KanamaruTaisei-2024</Center>
-        </Center>     
+        <Footer></Footer>  
     </Box>
   )
   };
