@@ -82,6 +82,7 @@ export default function page() {
           </Center>
         </Box>  
         </Box>
+        
         <Footer />  
     </Box>
   )
