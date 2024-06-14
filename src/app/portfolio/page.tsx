@@ -7,7 +7,7 @@ import { useDisclosure } from "@yamada-ui/react"
 import React  from "react"
 
 
-export default function Portfolio() {
+export  function Portfolio() {
   const {isOpen,onOpen,onClose} = useDisclosure();
   
   return (

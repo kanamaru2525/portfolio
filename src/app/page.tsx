@@ -11,7 +11,7 @@ const notojp = Noto_Sans_JP({
   display: "swap",
 });
 
-export default function Home() {
+export default function page() {
   return (
     <Box _scrollbar={{display:"none"}} fontFamily="notojp">
       <Header />
@@ -86,3 +86,4 @@ export default function Home() {
     </Box>
   )
   };
+  
