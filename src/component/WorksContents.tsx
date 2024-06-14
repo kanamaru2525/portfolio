@@ -39,6 +39,7 @@ const WorksContents = ({title,pic,product_time,article}:WorksProps) => {
                 <Heading as="h3" size="lg" isTruncated w="full" borderBottom="solid">作成意図</Heading>
                     <Divider variant="solid" />
                     <Box whiteSpace="pre-line">
+                   
                     {/* biome-ignore lint/suspicious/noArrayIndexKey: <explanation> */}
                     {article.split('$n').map((line, index) => <Text key={index}>{line}</Text>)}
                     </Box>
