@@ -11,7 +11,7 @@ const notojp = Noto_Sans_JP({
   display: "swap",
 });
 
-export default function page() {
+export default function portfolio() {
   return (
     <Box _scrollbar={{display:"none"}} fontFamily="notojp">
       <Header />
