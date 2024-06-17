@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+import React from "react";
 import Footer from "@/component/footer";
 import Header from "@/component/header";
 import { Box, Flex,Text,Image, List, ListItem, Motion, Center, Grid, GridItem } from "@yamada-ui/react";
@@ -11,7 +12,7 @@ const notojp = Noto_Sans_JP({
   display: "swap",
 });
 
-export  function PortfolioPage() {
+export  function page() {
   return (
     <Box _scrollbar={{display:"none"}} fontFamily="notojp">
       <Header />
